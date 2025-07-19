@@ -1,6 +1,7 @@
 # Databricks-MLOps (Customer Churn)
 
 This project contains notebooks and code for building a full MLOps pipeline in Azure Databricks by leveraging the Databricks Lakehouse to orchestrate and deploy trained models in production.
+![Process Flow Diagram](./images/PFD%20-%20Databricks%20Mlops.png)
 
 ## Steps
 1. Ingested data is preprocessed and features are stored in a feature store
@@ -19,3 +20,12 @@ To evaluate model performance beyond traditional metrics like F1 score, we use a
 - True Negatives (TN): No cost.
 
 The total revenue gain is calculated from the confusion matrix, helping compare models by estimated financial impact, not just predictive accuracy.
+
+### - End2End Intial Model Training Pipeline
+![End2End](./images/end2end.png)
+
+### - Drift Detection Pipeline
+![Drift Detection](./images/drift%20detection.png)
+
+### - Drift Detection Monitoring using an Online Inference Table
+![Driff Detection](./images/drift_detection_monitoring.png)
